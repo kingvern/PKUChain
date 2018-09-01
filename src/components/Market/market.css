@@ -1,0 +1,14 @@
+.market-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 300px;
+    border: 1px solid black
+}
+
+.goods-bg {
+    border: 1px solid black
+}
+
+
