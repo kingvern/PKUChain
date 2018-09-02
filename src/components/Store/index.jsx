@@ -1,5 +1,4 @@
 import React from 'react'
-import tree from '../../public/images/tree.png'
 import {simpleStoreContract} from '../../simpleStore'
 
 require('./tree.css')
@@ -18,6 +17,7 @@ class Tree extends React.Component {
     state = {
         fruits: []
     }
+
     getFruitData(){
         return [1, 2, 3, 4, 5, 6]
     }

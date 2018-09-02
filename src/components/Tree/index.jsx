@@ -1,31 +1,29 @@
 import React from 'react'
-import tree from '../../public/images/tree.png'
+import tree_hasFruit from '../../public/images/tree_hasfruit.png'
+import tree_noFruit from '../../public/images/tree_nofruit.png'
 import {simpleStoreContract} from '../../simpleStore'
 
 require('./tree.css')
 
 const pic = '../../public/images/pic.jpg'
 
-const Fruit = () => {
-    return (
-        <div className="fruit-bg">
-            fruits
-        </div>
-    )
-}
+// const Fruit = () => {
+//     return (
+//         <div className="fruit-bg">
+//             fruits
+//         </div>
+//     )
+// }
 
 class Tree extends React.Component {
     state = {
-        fruits: []
-    }
-    getFruitData(){
-        return [1, 2, 3, 4, 5, 6]
+        fruits: this.props.fruits
     }
     componentDidMount() {
-        let FruitData = this.getFruitData()
-        this.setState({
-            fruits:FruitData
-        })
+        // let FruitData = this.getFruitData()
+        // this.setState({
+        //     fruits:FruitData
+        // })
     }
 
 
@@ -34,11 +32,7 @@ class Tree extends React.Component {
     render() {
         return (
             <div>
-                <img className="bg_tree" src={tree} />
-                {this.state.fruits.map((item, index) => (
-                    <Fruit/>
-                ))}
-
+                <img className="bg_tree" src={this.props.data == 0 ? tree_noFruit : tree_hasFruit} onClick={this.props.data == 0 ? null : this.props.onClick}/>
             </div>
         )
     }

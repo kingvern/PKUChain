@@ -1,14 +1,18 @@
 import React from 'react'
 
 
-import modalStyle  from '../../modalStyle'
+import marketModalStyle  from '../../modalStyle'
 import pic from '../../public/images/pic.jpg'
+import market_bg from '../../public/images/market-bg.png'
+import market_pricebar from '../../public/images/market-priceban.png'
 import market from '../../public/images/market.png'
 import goods0 from '../../public/images/goods0.png'
 import goods1 from '../../public/images/goods1.png'
 import goods2 from '../../public/images/goods2.png'
 import goods3 from '../../public/images/goods3.png'
 import goods4 from '../../public/images/goods4.png'
+import market_confirm from '../../public/images/market-confirm.png'
+import market_pocket from '../../public/images/market-pocket.png'
 import Modal from 'react-modal';
 import {simpleStoreContract} from '../../simpleStore'
 
@@ -33,8 +37,9 @@ class Goods extends  React.Component{
     render(){
         return (
             <div className="goods-bg">
-                {this.props.goodsName}
-                <img src={this.props.goodsPic} />
+                    <img src={this.props.goodsPic} />
+                    <span className="goods-price">{this.props.goodsName}</span>
+
             </div>
         )
     }
@@ -47,8 +52,8 @@ class Market extends React.Component {
             times: [],
             texts: [],
             modalIsOpen: false,
-            goodsPics: [goods0,goods1, goods2, goods3, goods4],
-            goodsNames: ['0','1','2','3','4']
+            goodsPics:[goods0,goods1,goods2,goods3,goods4],
+            goodsNames: ['2','5','1','10','3']
         }
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
@@ -64,19 +69,6 @@ class Market extends React.Component {
     }
 
     submitMarket(){
-        // const from = 'e3fba7efa7e9b68b18c31f42b41c2dff7dc69b0c'
-        //
-        // var times=[]
-        // for(let i = 0;i < 10; i++){
-        //     times.push(new Date())
-        // }
-        // console.log(times)
-        // Promise.all(times.map(time => simpleStoreContract.methods.get(time).call({ from })))
-        //     .then(texts => {
-        //         this.setState({ texts })
-        //         console.log(texts)
-        //     })
-        //     .catch(console.error)
         this.closeModal()
     }
 
@@ -91,16 +83,29 @@ class Market extends React.Component {
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
-                    style={modalStyle}
+                    style={marketModalStyle}
                     contentLabel=""
                 >
-                    {this.state.goodsPics.map((goodsPic, idx) => (
-                        <Goods
-                            goodsPic={goodsPic}
-                            goodsName={this.state.goodsNames[idx]}
-                        />
-                    ))}
-                    <button onClick={this.submitMarket}>close</button>
+                    <div className="market-bg">
+                        <div className="goods-container">
+                            {this.state.goodsPics.map((goodsPic, idx) => (
+                                <Goods
+                                    goodsPic={goodsPic}
+                                    goodsName={this.state.goodsNames[idx]}
+                                />
+                            ))}
+                        </div>
+                        <div className="market-frontbg" />
+                        <button  onClick={this.submitMarket}>关闭</button>
+                        <img className="market-confirm" src={market_confirm} onClick={()=>{
+                            this.props.onClick(2);
+                            this.setState({modalIsOpen: false});
+
+                        }
+                        }/>
+                        <img className="market-pocket" src={market_pocket} />
+                        <span className="market-charge">{this.props.fruits}</span>
+                    </div>
                 </Modal>
             </div>
         )

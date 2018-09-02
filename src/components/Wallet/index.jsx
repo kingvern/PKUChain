@@ -8,7 +8,7 @@ import {simpleStoreContract} from '../../simpleStore'
 import nervos from '../../nervos'
 
 import wallet from '../../public/images/wallet.png'
-import modalStyle  from '../../modalStyle'
+import walletModalStyle  from '../../modalStyle'
 
 
 require('./wallet.css')
@@ -31,17 +31,6 @@ class Wallet extends React.Component {
     }
 
     closeModal() {
-        console.log("Newname",this.state.newWallet)
-        let name = this.state.newWallet
-        const from = 'e3fba7efa7e9b68b18c31f42b41c2dff7dc69b0c'
-        simpleStoreContract.methods
-            .buyMonkey(name)
-            .call({
-                from,
-            })
-            .catch(console.error)
-
-
         this.setState({modalIsOpen: false});
     }
 
@@ -56,16 +45,8 @@ class Wallet extends React.Component {
     render() {
         return (
             <div>
-                <img src={wallet} className="wallet-button" onClick={this.openModal} />
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    onRequestClose={this.closeModal}
-                    style={modalStyle}
-                    contentLabel=""
-                >
-                    <input value={this.state.newWallet} onChange={this.setNewWallet}/>
-                    <button onClick={this.closeModal}>点击充香蕉</button>
-                </Modal>
+                <img src={wallet} className="wallet-button" onClick={this.props.onClick} />
+                <span className="wallet-button">{this.props.fruits}</span>
             </div>
         )
     }

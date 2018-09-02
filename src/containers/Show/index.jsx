@@ -12,22 +12,22 @@ class Show extends React.Component {
         errorText: '',
     }
 
-    componentDidMount() {
-        const {time} = this.props.match.params
-        if (time) {
-            simpleStoreContract.methods
-                .get(time)
-                .call({
-                    from: nervos.appchain.accounts.wallet[0].address,
-                })
-                .then(text => {
-                    this.setState({time, text})
-                })
-                .catch(error => this.setState({errorText: JSON.stringify(error)}))
-        } else {
-            this.setState({errorText: 'No Time Specified'})
-        }
-    }
+    // componentDidMount() {
+    //     const {time} = this.props.match.params
+    //     if (time) {
+    //         simpleStoreContract.methods
+    //             .get(time)
+    //             .call({
+    //                 from: nervos.appchain.accounts.wallet[0].address,
+    //             })
+    //             .then(text => {
+    //                 this.setState({time, text})
+    //             })
+    //             .catch(error => this.setState({errorText: JSON.stringify(error)}))
+    //     } else {
+    //         this.setState({errorText: 'No Time Specified'})
+    //     }
+    // }
 
     render() {
         const {time, text} = this.state

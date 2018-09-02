@@ -3,14 +3,14 @@
 
     align-items: center;
     justify-content: center;
-    background: url("../../public/images/pic_wall.jpg") no-repeat;
+    background: url("../../public/images/pic-wall-bg.png") no-repeat;
     background-size: cover;
 }
 
 .pic_wall {
     width: 60%;
     height: 100%;
-    background: url("../../public/images/pic_wall.jpg") no-repeat;
+    background: url("../../public/images/pic-wall-bg.png") no-repeat;
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -18,10 +18,7 @@
     justify-content: space-around;
 }
 
-.pic_item {
-    width: 200px;
-    height: 150px;
-}
+
 
 .pic_wall_icon {
     position: absolute;
@@ -33,4 +30,67 @@
     position: absolute;
     left: 30%;
     top:20%;
+}
+
+.pic{
+    width: 400px;
+    height: 200px;
+}
+
+
+.pic-bg {
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 200px;
+    margin-bottom: 100px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pic-container{
+    margin-left: 350px;
+    margin-top:200px;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    width: 1400px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pic-bg_l {
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    width: 400px;
+    height: 200px;
+    margin-bottom: 100px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pic-container_l{
+    margin-left: 350px;
+    margin-top:200px;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    width: 1400px;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pic_wall_bg_l{
+    width: 400px;
+    height: 200px;
 }

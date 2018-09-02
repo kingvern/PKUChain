@@ -8,18 +8,18 @@ import {simpleStoreContract} from '../../simpleStore'
 import nervos from '../../nervos'
 
 
-import modalStyle  from '../../modalStyle'
-
+import nameModalStyle  from '../../modalStyle'
+const from = '9b408a683b284fd3dae967bfe50528b0983c4865'
 
 require('./name.css')
 
 class Name extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             times: [],
             texts: [],
-            modalIsOpen: false,
+            modalIsOpen: !this.props.hasLogin,
             newName: ""
         }
         this.openModal = this.openModal.bind(this);
@@ -31,18 +31,7 @@ class Name extends React.Component {
     }
 
     closeModal() {
-        console.log("Newname",this.state.newName)
-        let name = this.state.newName
-        const from = 'e3fba7efa7e9b68b18c31f42b41c2dff7dc69b0c'
-        simpleStoreContract.methods
-            .buyMonkey(name)
-            .call({
-                from,
-            })
-            .catch(console.error)
-
-
-        this.setState({modalIsOpen: false});
+        this.setState({modalIsOpen: false})
     }
 
     setNewName = e => {
@@ -50,24 +39,51 @@ class Name extends React.Component {
     }
 
     componentDidMount() {
-        this.openModal()
+        console.log("hasLogin:",this.props.hasLogin)
+        if(!this.props.hasLogin) {
+            this.openModal()
+            // this.freeMonkey()
+        }
+
     }
 
+
     render() {
-        return (
-            <div>
-                {/*<button onClick={this.openModal}>name</button>*/}
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    onRequestClose={this.closeModal}
-                    style={modalStyle}
-                    contentLabel=""
-                >
-                    <input value={this.state.newName} onChange={this.setNewName}/>
-                    <button onClick={this.closeModal}>就叫这个吧</button>
-                </Modal>
-            </div>
-        )
+        if(this.props.hasLogin){
+            return (
+                <div>
+                    <Modal
+                        isOpen={this.state.modalIsOpen}
+                        onRequestClose={this.closeModal}
+                        style={nameModalStyle}
+                        contentLabel=""
+                    >
+
+                        <div className="name-bg">
+                            你的猴已经等你很久了
+                        </div>
+                    </Modal>
+                </div>
+            )
+        }else {
+            return (
+                <div>
+                    <Modal
+                        isOpen={this.state.modalIsOpen}
+                        onRequestClose={this.closeModal}
+                        style={nameModalStyle}
+                        contentLabel=""
+                    >
+
+                        <div className="name-bg" >
+                           看你还没来过，送你个猴吧
+                            <button onClick={this.props.onClick}>点击</button>
+                        </div>
+                    </Modal>
+                </div>
+            )
+        }
+
     }
 }
 

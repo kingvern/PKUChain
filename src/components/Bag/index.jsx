@@ -1,9 +1,14 @@
 import React from 'react'
 
 
-import modalStyle  from '../../modalStyle'
+import bagModalStyle  from '../../modalStyle'
 import pic from '../../public/images/pic.jpg'
 import bag from '../../public/images/bag.png'
+import goods0 from '../../public/images/goods0.png'
+import goods1 from '../../public/images/goods1.png'
+import goods2 from '../../public/images/goods2.png'
+import goods3 from '../../public/images/goods3.png'
+import goods4 from '../../public/images/goods4.png'
 import Modal from 'react-modal';
 import {simpleStoreContract} from '../../simpleStore'
 
@@ -11,11 +16,11 @@ import {simpleStoreContract} from '../../simpleStore'
 require('./bag.css')
 
 
-const Goods = () => {
+const Thing = ({thingPic}) => {
+    // console.log(thingPic)
     return (
-        <div className="goods-bg">
-            caps
-            <img src={pic} />
+        <div className="thing-bg">
+            <img src={thingPic} />
         </div>
     )
 }
@@ -27,7 +32,7 @@ class Bag extends React.Component {
             times: [],
             texts: [],
             modalIsOpen: false,
-            goods: [1, 2, 3, 4, 5, 6]
+            goodsPics: [goods0,goods1, goods2, goods3, goods4]
         }
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
@@ -70,13 +75,19 @@ class Bag extends React.Component {
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
-                    style={modalStyle}
+                    style={bagModalStyle}
                     contentLabel=""
                 >
-                    {this.state.goods.map((item, idx) => (
-                        <Goods />
+
+                    <div className="bag-bg">
+                        <div className="thing-container">
+                    {this.state.goodsPics.map((thingPic, idx) => (
+                        <Thing
+                            thingPic={thingPic}/>
                     ))}
+                        </div>
                     <button onClick={this.submitBag}>close</button>
+                    </div>
                 </Modal>
             </div>
         )

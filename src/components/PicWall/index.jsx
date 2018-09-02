@@ -1,6 +1,6 @@
 import React from 'react'
 import pic from '../../public/images/pic.jpg'
-import pic_wall from '../../public/images/pic_wall.png'
+import pic_wall from '../../public/images/pic-wall-bg.png'
 import {Link} from 'react-router-dom'
 import {simpleStoreContract} from '../../simpleStore'
 
@@ -9,13 +9,28 @@ import modalStyle  from '../../modalStyle'
 import nervos from '../../nervos'
 
 import Modal from 'react-modal';
+import axios from "axios";
 
 require('./pic_wall.css')
 
-const Pic = ({time, text, pic, hasYearLabel}) => {
+const Pic = ({ pic}) => {
+    // const _time = new Date(+time)
+    return (
+        <div className="pic-bg">
+            {/*{hasYearLabel ? <div className="list_record_year">{_time.getFullYear()}</div> : null}*/}
+            {/*<span>{`${_time.getMonth() + 1}-${_time.getDate()} ${_time.getHours()}:${_time.getMinutes()}`}</span>*/}
+
+            {/*<Link to={`/show/${time}`}>*/}
+                <img src={pic} className="pic"/>
+            {/*</Link>*/}
+        </div>
+    )
+}
+
+const Pic_l = ({time, text, pic, hasYearLabel}) => {
     const _time = new Date(+time)
     return (
-        <div className="pic_item">
+        <div className="pic-bg_l">
             {/*{hasYearLabel ? <div className="list_record_year">{_time.getFullYear()}</div> : null}*/}
             <span>{`${_time.getMonth() + 1}-${_time.getDate()} ${_time.getHours()}:${_time.getMinutes()}`}</span>
 
@@ -39,6 +54,13 @@ class PicWall extends React.Component {
     }
 
     openModal() {
+        console.log("arrstring",this.props.data.join(","))
+        axios.post('http://123.207.75.151:9996/bitrun/api/v1/get_images',{"images":this.props.data.join(",")})
+            .then( (res)=>{
+                console.log(res);
+                this.setState({times:res.data})
+            })
+
         this.setState({modalIsOpen: true});
     }
 
@@ -85,7 +107,9 @@ class PicWall extends React.Component {
 
         return (
             <div>
-                <div className="pic_wall_button" onClick={this.openModal}><img src={pic_wall} /></div>
+                <div className="pic_wall_button" onClick={this.openModal}>
+                    <img src={pic_wall} className="pic_wall_bg_l"/>
+                </div>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
@@ -93,16 +117,14 @@ class PicWall extends React.Component {
 
                     contentLabel="照片墙"
                 >
-                    <div className="pic_wall">
-                        {times.map((time, idx) => (
+                    <div className="pic_wall-bg">
+                        <div className="pic-container">
+                        {this.props.data.map((pic, idx) => (
                             <Pic
-                                time={time}
-                                text={texts[idx]}
                                 pic={pic}
-                                key={time}
-                                hasYearLabel={idx === 0 || new Date(+time).getFullYear() !== new Date(+times[idx - 1]).getFullYear()}
                             />
                         ))}
+                        </div>
                     </div>
                     <button onClick={this.closeModal}>close</button>
                 </Modal>

@@ -1,7 +1,7 @@
 const config = {
     chain: 'http://121.196.200.225:1337',
-    privateKey: 'd091c4e8ba796603cd44fe9dcdf0f16aaa1b5770c823b91027ed903f5120ee30',
-    contractAddress: '0xB54A1bE2A926685B981aEc17fbb6Da576371DA76',
+    privateKey: 'a3b33668e5be5b31e08f5695a1efb21bd0c2e8607d06a5b55021585883be93ac',
+    contractAddress: '0x57f512188445bd07187031206EA441Bf8051D813',
 }
 
 

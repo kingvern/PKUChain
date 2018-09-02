@@ -23,6 +23,7 @@ class Add extends React.Component {
     handleInput = e => {
         this.setState({text: e.target.value})
     }
+
     handleSubmit = e => {
         const {time, text} = this.state
         nervos.appchain
