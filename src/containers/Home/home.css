@@ -68,10 +68,10 @@
 .market-bg {
     overflow: hidden;
     position: fixed;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     background: url("../../public/images/market-bg.png") no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 /*.name-bg {*/
     /*overflow: hidden;*/
@@ -92,19 +92,19 @@
 .bag-bg {
     overflow: hidden;
     position: fixed;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     background: url("../../public/images/bag-bg.png") no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 .pic_wall-bg{
 
     overflow: hidden;
     position: fixed;
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     background: url("../../public/images/pic-wall-bg.png") no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
 
 }

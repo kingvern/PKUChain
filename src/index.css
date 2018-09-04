@@ -24,23 +24,22 @@ body {
         -moz-transform:scale(1) rotate(0);}
 }
 
-@-webkit-keyframes tad {
+@keyframes tad {
     0%, 50% {
-        -webkit-transform: scale(1);
+        transform: scale(1);
     }
     25% {
-        -webkit-transform: scale(1) rotate(-3deg);
+        transform: scale(1) rotate(-3deg);
     }
     75% {
-        -webkit-transform: scale(1) rotate(3deg);
+        transform: scale(1) rotate(3deg);
     }
     100%{
-        -webkit-transform:scale(1) rotate(0);}
+        transform:scale(1) rotate(0);}
 }
 
 /*img{*/
-  /*-webkit-animation: tad 0.5s infinite ease both;*/
-  /*-moz-animation: tad 0.5s infinite ease both;*/
+  /*animation: tad 8.5s infinite linear both;*/
 
 /*}*/
 

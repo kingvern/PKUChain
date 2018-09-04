@@ -12,8 +12,10 @@ const modalStyle = {
 const nameModalStyle = {
     content: {
         // background: 'url("./public/images/name-bg.png") no-repeat',
-        top: '30%',
+        top: '50%',
         left: '50%',
+        width: '500px',
+        height:'100px',
         right: 'auto',
         bottom: 'auto',
         marginRight: '-50%',

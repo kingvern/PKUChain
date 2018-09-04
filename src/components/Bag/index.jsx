@@ -32,7 +32,7 @@ class Bag extends React.Component {
             times: [],
             texts: [],
             modalIsOpen: false,
-            goodsPics: [goods0,goods1, goods2, goods3, goods4]
+            goodsPics: [goods0]
         }
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);

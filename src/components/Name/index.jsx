@@ -52,20 +52,10 @@ class Name extends React.Component {
         if(this.props.hasLogin){
             return (
                 <div>
-                    <Modal
-                        isOpen={this.state.modalIsOpen}
-                        onRequestClose={this.closeModal}
-                        style={nameModalStyle}
-                        contentLabel=""
-                    >
-
-                        <div className="name-bg">
-                            你的猴已经等你很久了
-                        </div>
-                    </Modal>
                 </div>
             )
-        }else {
+        }
+        else {
             return (
                 <div>
                     <Modal

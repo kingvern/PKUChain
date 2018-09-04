@@ -3,7 +3,7 @@ import logo from '../../public/images/logo.svg'
 import bg from '../../public/images/bg.png'
 
 import bed from '../../public/images/bed.png'
-import bit from '../../public/images/bit.png'
+import end from '../../public/images/end.jpg'
 import frontbg from '../../public/images/frontbg.png'
 import pc from '../../public/images/pc.png'
 import quiet from '../../public/images/quilt.png'
@@ -73,7 +73,7 @@ class Home extends React.Component {
         this.getStore();
         this.getOneProducts();
         this.getOnePictures();
-        // setTimeout(this.walkOut(),5000)
+        // setTimeout(this.walkOut(),20000)
         this.finalPicture();
 
         setTimeout(() => {
@@ -83,6 +83,8 @@ class Home extends React.Component {
     }
 
     getStatus() {
+
+
         console.log('getStatus', {
             "address": from,
             "randombackground": this.state.status[0],
@@ -358,12 +360,13 @@ class Home extends React.Component {
                             .then(picArr => {
                                 console.log("picArr", picArr)
 
+
                             })
                     })
             })
         var monkey = this.state.monkey
         monkey[3] = 1
-        this.setState({monkey})
+        this.setState({monkey:monkey})
     }
 
     finalPicture() {
@@ -413,11 +416,13 @@ class Home extends React.Component {
 
                 <Monkey data={this.state.monkeyClass} where={this.state.monkey[3]}/>
                 {/*<img className="bg_pic" src={frontbg} />*/}
-                <img className="bg_frontbg" src={frontbg}/>
+                <img className="bg_frontbg" src={ this.state.monkey[3]==2 ? end :frontbg}/>
 
                 <Market data={this.state.marketData} fruits={this.state.fruits} onClick={this.buyProduct.bind(this)}/>
                 <Bag data={this.state.bag}/>
-                <Wallet fruits={this.state.fruits} onClick={this.walkOut.bind(this)}/>
+                <Wallet fruits={this.state.fruits} onClick={()=>{ var monkey = this.state.monkey
+                    monkey[3] = 2
+                    this.setState({monkey:monkey})}}/>
 
             </React.Fragment>)
     }

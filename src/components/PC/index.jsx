@@ -49,7 +49,7 @@ class PC extends React.Component {
                     style={modalStyle}
                     contentLabel=""
                 >
-                    <img src={this.state.pic} onClick={this.closeModal} />
+                    <img src={this.state.pic} className='pc' onClick={this.closeModal} />
                 </Modal>
             </div>
         )
