@@ -1,17 +1,17 @@
 import React from 'react'
 
 import Modal from 'react-modal';
-import {simpleStoreContract} from '../../simpleStore'
+import {simpleStoreContract} from '../simpleStore'
 
 // import {transaction, simpleStoreContract} from '../../simpleStore'
 
-import nervos from '../../nervos'
+import nervos from '../nervos'
 
-import wallet from '../../public/images/wallet.png'
-import walletModalStyle  from '../../modalStyle'
+import wallet from '../images/wallet.png'
+import walletModalStyle  from '../modalStyle'
 
 
-require('./wallet.css')
+require('./style/wallet.css')
 
 class Wallet extends React.Component {
     constructor() {

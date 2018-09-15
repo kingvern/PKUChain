@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { Provider } from 'react-redux'
+import store from './store'
 import registerServiceWorker from './registerServiceWorker';
 
 import Modal from 'react-modal';
@@ -33,6 +35,6 @@ const appRoot = document.getElementById('app-root');
 
 // export default Modal
 Modal.setAppElement(appRoot)
-ReactDOM.render(<App/>, appRoot);
+ReactDOM.render(<Provider store = {store} ><App/></Provider>, appRoot);
 
 registerServiceWorker();

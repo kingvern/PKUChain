@@ -1,9 +1,9 @@
 import React from 'react'
 
-import logo from '../../public/images/logo.svg'
-import Name from '../../components/Name'
+import logo from '../images/logo.svg'
+import Name from './Name'
 
-import './header.css'
+import './style/header.css'
 
 
 const Header = ({hasLogin,onClick}) => (

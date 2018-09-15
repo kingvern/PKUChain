@@ -1,34 +1,34 @@
 import React from 'react'
-import logo from '../../public/images/logo.svg'
-import bg from '../../public/images/bg.png'
+import logo from '../../images/logo.svg'
+import bg from '../../images/bg.png'
 
-import bed from '../../public/images/bed.png'
-import end from '../../public/images/end.jpg'
-import frontbg from '../../public/images/frontbg.png'
-import pc from '../../public/images/pc.png'
-import quiet from '../../public/images/quilt.png'
+import bed from '../../images/bed.png'
+import end from '../../images/end.jpg'
+import frontbg from '../../images/frontbg.png'
+import pc from '../../images/pc.png'
+import quiet from '../../images/quilt.png'
 
 // import bg from "../../public/images/bg.png"
 
-import PicWall from '../../components/PicWall'
-import Bed from '../../components/Bed'
-import Monkey from '../../components/Monkey'
-import Header from '../../components/Header'
-import Tree from '../../components/Tree'
-import Market from '../../components/Market'
-import Bag from '../../components/Bag'
-import Wallet from '../../components/Wallet'
-import Quilt from "../../components/Quilt"
-import PC from "../../components/PC"
-import Modal from 'react-modal';
+import PicWall from '../../components/PicWall.jsx'
+import Bed from '../../components/Bed.jsx'
+import Monkey from '../../components/Monkey.jsx'
+import Header from '../../components/Header.jsx'
+import Tree from '../../components/Tree.jsx'
+import Market from '../../components/Market.jsx'
+import Bag from '../../components/Bag.jsx'
+import Wallet from '../../components/Wallet.jsx'
+import Quilt from '../../components/Quilt.jsx'
+import PC from '../../components/PC.jsx'
+
+import { connect } from 'react-redux';
 
 
 import './home.css'
 
-import {transaction, simpleStoreContract} from '../../simpleStore'
+import { transaction, simpleStoreContract } from '../../simpleStore'
 
 import nervos from '../../nervos'
-// import $ from 'jQuery'
 import axios from 'axios'
 
 const from = '9b408a683b284fd3dae967bfe50528b0983c4865'
@@ -52,7 +52,7 @@ class Home extends React.Component {
             monkeyClass: false,
             where: 2,
             status: [1, 0, 1],
-            i:0
+            i: 0
         }
     }
 
@@ -126,8 +126,8 @@ class Home extends React.Component {
         var i = this.state.i
         var newPic = newpicarr[i]
         i++
-        if(i == 5) i = 0
-        this.setState({i:i})
+        if (i == 5) i = 0
+        this.setState({i: i})
         var picArrayy = this.state.picArrayy
         picArrayy.push(newPic)
         this.setState({picArrayy})
@@ -366,7 +366,7 @@ class Home extends React.Component {
             })
         var monkey = this.state.monkey
         monkey[3] = 1
-        this.setState({monkey:monkey})
+        this.setState({monkey: monkey})
     }
 
     finalPicture() {
@@ -416,17 +416,71 @@ class Home extends React.Component {
 
                 <Monkey data={this.state.monkeyClass} where={this.state.monkey[3]}/>
                 {/*<img className="bg_pic" src={frontbg} />*/}
-                <img className="bg_frontbg" src={ this.state.monkey[3]==2 ? end :frontbg}/>
+                <img className="bg_frontbg" src={this.state.monkey[3] == 2 ? end : frontbg}/>
 
                 <Market data={this.state.marketData} fruits={this.state.fruits} onClick={this.buyProduct.bind(this)}/>
                 <Bag data={this.state.bag}/>
-                <Wallet fruits={this.state.fruits} onClick={()=>{ var monkey = this.state.monkey
+                <Wallet fruits={this.state.fruits} onClick={() => {
+                    var monkey = this.state.monkey
                     monkey[3] = 2
-                    this.setState({monkey:monkey})}}/>
+                    this.setState({monkey: monkey})
+                }}/>
 
             </React.Fragment>)
     }
 
 }
 
-export default Home
+const mapDispatchToProps = (dispatch) => {
+    return {
+        initList(e) {
+            const action = {
+                type: 'init_list'
+            }
+            dispatch(action);
+        },
+        handleChangeInput(e) {
+            const action = {
+                type: 'change_input_value',
+                value: e.target.value
+            }
+            dispatch(action);
+        },
+
+        handleAddInput(e) {
+            const action = {
+                type: 'add_input_value'
+            }
+            dispatch(action);
+        },
+        handleDelInput(idx) {
+            const action = {
+                type: 'del_input_value',
+                value: idx
+            }
+            dispatch(action);
+        }
+    }
+}
+
+const mapStateToProps = (state) => {
+    return {
+        hasLogin: state.hasLogin, //有无猴
+        monkey: state.monkey, //猴子状态
+        fruits: state.fruits, //钱
+        treeFruits: state.treeFruits, //树上钱
+        bag: state.bag, //背包
+        picWall: state.picWall, //照片墙
+        market: state.market, //商店
+        marketData: state.marketData, //商店数据
+        Screen: state.Screen, //电脑图片
+        picArray: state.picArray, //照片墙图片序号
+        picArrayy: state.picArrayy, //照片墙图片序号
+        monkeyClass: state.monkeyClass,
+        where: state.where,
+        status: state.status,
+        i: state.i
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

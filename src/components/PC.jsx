@@ -1,8 +1,8 @@
 import React from 'react'
-import pc from '../../public/images/pc.png'
-import pc_screen from '../../public/images/pc.png'
-import modalStyle  from '../../modalStyle'
-import './pc.css'
+import pc from '../images/pc.png'
+import pc_screen from '../images/pc.png'
+import modalStyle  from '../modalStyle'
+import './style/pc.css'
 import Modal from "react-modal";
 import axios from "axios";
 

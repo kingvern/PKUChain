@@ -3,14 +3,14 @@
 
     align-items: center;
     justify-content: center;
-    background: url("../../public/images/pic-wall-bg.png") no-repeat;
+    background: url("../../images/pic-wall-bg.png") no-repeat;
     background-size: cover;
 }
 
 .pic_wall {
     width: 60%;
     height: 100%;
-    background: url("../../public/images/pic-wall-bg.png") no-repeat;
+    background: url("../../images/pic-wall-bg.png") no-repeat;
     display: flex;
     align-items: flex-start;
     align-content: flex-start;

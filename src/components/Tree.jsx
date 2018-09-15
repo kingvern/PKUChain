@@ -1,9 +1,9 @@
 import React from 'react'
-import tree_hasFruit from '../../public/images/tree_hasfruit.png'
-import tree_noFruit from '../../public/images/tree_nofruit.png'
-import {simpleStoreContract} from '../../simpleStore'
+import tree_hasFruit from '../images/tree_hasfruit.png'
+import tree_noFruit from '../images/tree_nofruit.png'
+import {simpleStoreContract} from '../simpleStore'
 
-require('./tree.css')
+require('./style/tree.css')
 
 const pic = '../../public/images/pic.jpg'
 

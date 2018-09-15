@@ -1,5 +1,5 @@
 import React from 'react'
-import './submit.css'
+import './style/submit.css'
 
 export default ({text = '愿此刻永恒', onClick, disabled = false}) => (
     <button

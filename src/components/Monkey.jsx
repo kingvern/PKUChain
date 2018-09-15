@@ -1,9 +1,9 @@
 import React from 'react'
-import monkey from '../../public/images/bit_0_0.png'
-import monkey_ from '../../public/images/bit_0_1.png'
-import monkeyNaked from '../../public/images/bit.png'
+import monkey from '../images/bit_0_0.png'
+import monkey_ from '../images/bit_0_1.png'
+import monkeyNaked from '../images/bit.png'
 
-import './monkey.css'
+import './style/monkey.css'
 
 
 

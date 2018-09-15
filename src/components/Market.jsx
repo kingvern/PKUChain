@@ -1,23 +1,23 @@
 import React from 'react'
 
 
-import marketModalStyle  from '../../modalStyle'
-import pic from '../../public/images/pic.jpg'
-import market_bg from '../../public/images/market-bg.png'
-import market_pricebar from '../../public/images/market-priceban.png'
-import market from '../../public/images/market.png'
-import goods0 from '../../public/images/goods0.png'
-import goods1 from '../../public/images/goods1.png'
-import goods2 from '../../public/images/goods2.png'
-import goods3 from '../../public/images/goods3.png'
-import goods4 from '../../public/images/goods4.png'
-import market_confirm from '../../public/images/market-confirm.png'
-import market_pocket from '../../public/images/market-pocket.png'
+import marketModalStyle  from '../modalStyle'
+import pic from '../images/pic.jpg'
+import market_bg from '../images/market-bg.png'
+import market_pricebar from '../images/market-priceban.png'
+import market from '../images/market.png'
+import goods0 from '../images/goods0.png'
+import goods1 from '../images/goods1.png'
+import goods2 from '../images/goods2.png'
+import goods3 from '../images/goods3.png'
+import goods4 from '../images/goods4.png'
+import market_confirm from '../images/market-confirm.png'
+import market_pocket from '../images/market-pocket.png'
 import Modal from 'react-modal';
-import {simpleStoreContract} from '../../simpleStore'
+import {simpleStoreContract} from '../simpleStore'
 
 
-require('./market.css')
+require('./style/market.css')
 
 
 // const Goods = ({goodsPic,goodsName}) => {

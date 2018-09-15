@@ -1,17 +1,17 @@
 import React from 'react'
-import pic from '../../public/images/pic.jpg'
-import pic_wall from '../../public/images/pic-wall-bg.png'
+import pic from '../images/pic.jpg'
+import pic_wall from '../images/pic-wall-bg.png'
 import {Link} from 'react-router-dom'
-import {simpleStoreContract} from '../../simpleStore'
+import {simpleStoreContract} from '../simpleStore'
 
-import modalStyle  from '../../modalStyle'
+import modalStyle  from '../modalStyle'
 
-import nervos from '../../nervos'
+import nervos from '../nervos'
 
 import Modal from 'react-modal';
 import axios from "axios";
 
-require('./pic_wall.css')
+require('./style/pic_wall.css')
 
 const Pic = ({ pic}) => {
     // const _time = new Date(+time)

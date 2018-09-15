@@ -1,6 +1,6 @@
 import React from 'react'
-import quilt from '../../public/images/quilt.png'
-import './quilt.css'
+import quilt from '../images/quilt.png'
+import './style/quilt.css'
 
 
 const Quilt = () => (

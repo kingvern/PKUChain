@@ -1,17 +1,27 @@
 import React from 'react'
 
 import Modal from 'react-modal';
-import {simpleStoreContract} from '../../simpleStore'
+import {simpleStoreContract} from '../simpleStore'
 
 // import {transaction, simpleStoreContract} from '../../simpleStore'
 
-import nervos from '../../nervos'
+import nervos from '../nervos'
 
 
-import nameModalStyle  from '../../modalStyle'
 const from = '9b408a683b284fd3dae967bfe50528b0983c4865'
 
-require('./name.css')
+require('./style/name.css')
+
+const nameModalStyle = {
+    content : {
+        top: '30%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)'
+    }
+};
 
 class Name extends React.Component {
     constructor(props) {

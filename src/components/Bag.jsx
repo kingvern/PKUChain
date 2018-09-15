@@ -1,19 +1,19 @@
 import React from 'react'
 
 
-import bagModalStyle  from '../../modalStyle'
-import pic from '../../public/images/pic.jpg'
-import bag from '../../public/images/bag.png'
-import goods0 from '../../public/images/goods0.png'
-import goods1 from '../../public/images/goods1.png'
-import goods2 from '../../public/images/goods2.png'
-import goods3 from '../../public/images/goods3.png'
-import goods4 from '../../public/images/goods4.png'
+import bagModalStyle  from '../modalStyle'
+import pic from '../images/pic.jpg'
+import bag from '../images/bag.png'
+import goods0 from '../images/goods0.png'
+import goods1 from '../images/goods1.png'
+import goods2 from '../images/goods2.png'
+import goods3 from '../images/goods3.png'
+import goods4 from '../images/goods4.png'
 import Modal from 'react-modal';
-import {simpleStoreContract} from '../../simpleStore'
+import {simpleStoreContract} from '../simpleStore'
 
 
-require('./bag.css')
+require('./style/bag.css')
 
 
 const Thing = ({thingPic}) => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import bed from '../../public/images/bed.png'
-import './bed.css'
+import bed from '../images/bed.png'
+import './style/bed.css'
 
 
 const Monkey = () => (
