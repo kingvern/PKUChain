@@ -1,69 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb28d77d-ad57-42f0-a370-a23c237a051b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="cb28d77d-ad57-42f0-a370-a23c237a051b" name="Default Changelist" comment="备份下">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Bag/bag.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/bag.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Bag/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bag.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Bed/bed.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/bed.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Bed/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Bed.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Market.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Market/market.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/market.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Monkey/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Monkey.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Monkey/monkey.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/monkey.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Name/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Name.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Name/name.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PC/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PC.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PC/pc.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/pc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PicWall/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PicWall.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PicWall/pic_wall.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/pic_wall.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Quilt/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quilt.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Quilt/quilt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/quilt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store/store.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/store.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Submit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Submit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Submit/submit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/submit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tree/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tree.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tree/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/tree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Wallet/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Wallet.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Wallet/wallet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/style/wallet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modalStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bag-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bag-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bag.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bag.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bit_0_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bit_0_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/bit_0_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bit_0_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/end.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/end.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/frontbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/frontbg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/goods0.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/goods0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/goods1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/goods1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/goods2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/goods2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/goods3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/goods3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/goods4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/goods4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/market-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/market-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/market-confirm.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/market-confirm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/market-pocket.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/market-pocket.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/market-priceban.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/market-priceban.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/market.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/market.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/monkey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/monkey.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/pc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/pc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/pic-wall-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/pic-wall-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/pic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/pic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/quilt.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/quilt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/tree_hasfruit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/tree_hasfruit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/tree_nofruit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/tree_nofruit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/images/wallet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/wallet.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -119,6 +58,7 @@
           <entry key="js" value="177" />
           <entry key="jsx" value="6924" />
           <entry key="md" value="21" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -127,7 +67,7 @@
           <entry key="HTML" value="2" />
           <entry key="JSX Harmony" value="6924" />
           <entry key="JavaScript" value="177" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="UNKNOWN" value="11" />
         </counts>
       </usages-collector>
@@ -159,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -430,18 +370,32 @@
       <workItem from="1535855382654" duration="114000" />
       <workItem from="1535855617269" duration="3498000" />
       <workItem from="1536027278519" duration="407000" />
-      <workItem from="1536980383850" duration="4943000" />
+      <workItem from="1536980383850" duration="5487000" />
     </task>
+    <task id="LOCAL-00001" summary="备份下">
+      <created>1536987717090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536987717091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="备份下">
+      <created>1536987954020</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536987954020</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77750000" />
+    <option name="totallyTimeSpent" value="78294000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="119" y="23" width="936" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23278688" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23278688" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -453,7 +407,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -484,8 +438,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="备份下" />
+    <option name="LAST_COMMIT_MESSAGE" value="备份下" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,8 +790,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
